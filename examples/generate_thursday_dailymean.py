@@ -199,7 +199,7 @@ templ = Templates(
     formula_for_two_layers = "((t1+t2+t3+t4)*7+13*(u1+u2+u3+u4)) <<param>_scale> /(4. * 20)",
 
     swvl_scale = '* 1000.',
-    xstl_scale = '',
+    stl_scale = '',
 
     step_seq_for_fieldset_1 = 'step = 0/to/$FCLENGTH24/by/24',
     step_seq_for_fieldset_2 = 'step = 6/to/$FCLENGTH18/by/24',

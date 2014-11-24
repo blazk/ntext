@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from textwrap import dedent
 import re
 
@@ -123,8 +121,6 @@ class Templates(dict):
                 prev_c = c
         except StopIteration:
             return expanded
-
-
 
 
 
