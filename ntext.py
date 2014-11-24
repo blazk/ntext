@@ -39,7 +39,7 @@ class Templates(dict):
         # The "command" is a template invocation of the form
         # "<keyword, arg1=val1, arg2=val2,...>"
         # This method ingests text up to and including the closing
-        # bracket. Returns keyword and a dict of arguments.
+        # bracket. Returns keyword and a list of (arg, val) pairs.
         command = ''
         nested = 0
         c = None
@@ -72,9 +72,6 @@ class Templates(dict):
 
 
     def _get_template(self, keyword, ctx, local_templates):
-        """
-        Return expanded template associated with the keyword
-        """
         try:
             template = local_templates[keyword]
         except KeyError:
