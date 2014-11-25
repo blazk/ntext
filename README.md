@@ -105,7 +105,7 @@ Alternative call (does the same): `templates.expand('<menu>', day='Monday', chef
 # Indirect referencing
 
 Templates are referenced by names (e.g. `<closed>` is a reference
-to a "It's a \<day\> and we are closed!" template) but template names
+to the "We are closed because \<cause\>!" template) but template names
 can be templated themselves. This *indirect referencing* is used for
-flow control, e.g. `<<chef>s_special>` is either a reference to "snails"
-or a reference to "pizza", depending on the `chef`.
+flow control, e.g. `<<chef>s_special>` is either a reference to "Snails!"
+or a reference to "Pizza!", depending on the `chef`.
